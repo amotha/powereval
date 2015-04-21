@@ -39,11 +39,15 @@ shinyUI(navbarPage("powereval",
                      detect, e.g. effect size of 20% => RR of 80%'),
                   p(strong('alpha'), ':Confidence level desired'),
                   p('Level of ', strong('power'), 'desired'),
-                  p(strong('n1'), ' and/or', strong('n2'),': sample sizes in the un-exposed and exposed groups respectivelly, corresponding to prevalence of
+                  p(strong('n1'), ' and/or', strong('n2'),': sample sizes in the un-exposed and exposed groups respectivelly, 
+                      corresponding to prevalence of
                     the exposure'),
                   p(strong('p1'),' and/or ', strong('p2'), ': proportion developing the outcome in the unexposed group and exposed group respectively (usually estimated from previous
                     research'),
-                  p(strong('nratio'),': ratio of un-exposed subjects to exposed subjects (n2/n1)')),
+                  p(strong('nratio'),': ratio of un-exposed subjects to exposed subjects (n2/n1)'),
+                  br(),
+                  p("To view the code used to generate the app, see the github repository ", a("powereval",
+                      href = "https://github.com/amotha/powereval"))),
          tabPanel("Power vs N vs RR Plot", value=3, h4("Power vs N over RR plot"),
                   p('Evaluate the ', strong('power'), ' for a range of sample sizes and effect sizes given a fixed value of other study 
                     parameters.'), plotOutput("powPlotP", width=900)),

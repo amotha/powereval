@@ -1,5 +1,7 @@
 # powereval
+Power evaluation
 
+## About powereval
 powereval is a shiny app that enables interactive computation of the sample size required or evaluation of the power for a
 test intended to determine if there is an association between the probability of an outcome of interest and the level of 
 the exposure factor. In other words, Power and Sample Size for Two-Sample Proportions Test. The computations are based on 
@@ -23,10 +25,11 @@ estimated from previous research
 ## Packages required
 
 powereval makes use of:
-* Power and Sample Size for Two-Sample Binomial Test from [Hmisc](https://github.com/harrelfe/Hmisc.git),
-* a grammar of graphics from [ggplot2](http://github.com/hadley/ggplot2),
-* reactive programming from [shiny](http://github.com/rstudio/shiny),
-* data transformation pipelines from [dplyr](http://github.com/hadley/dplyr).
+* Power and Sample Size for Two-Sample Binomial Test from [Hmisc](https://github.com/harrelfe/Hmisc.git)
+* A grammar of graphics from [ggplot2](http://github.com/hadley/ggplot2)
+* Reactive programming from [shiny](http://github.com/rstudio/shiny)
+* Tools for splitting, applying and combining data [plyr](http://cran.r-project.org/web/packages/plyr/plyr.pdf)
+* Data transformation pipelines from [dplyr](http://github.com/hadley/dplyr)
 
 ## Installation 
 
@@ -37,4 +40,7 @@ install.packages("ggplot2")
 install.packages("plyr")
 install.packages("dplyr")
 install.packages("Hmisc")
+install.packages("Shiny")
 ```
+## Demo
+See the demo of the app at [powereval](https://powereval.shinyapps.io/powereval/)
